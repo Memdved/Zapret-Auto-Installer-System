@@ -1,4 +1,4 @@
-# 🚀 Zapret Auto-Installer System
+# 🚀 Zapret Auto-Updater System
 
 <div align="center">
 
