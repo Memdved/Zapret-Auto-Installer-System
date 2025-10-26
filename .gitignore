@@ -1,0 +1,47 @@
+# Временные файлы Windows
+Thumbs.db
+*.tmp
+*.temp
+*.log
+
+# Папки создаваемые скриптами
+backup/
+temp_extract_*/
+zapret-discord-youtube-main/
+
+# Скачанные архивы
+zapret-discord-youtube-*.rar
+zapret-discord-youtube-*.zip
+
+# Системные файлы
+.DS_Store
+desktop.ini
+
+# Логи и дампы
+*.log
+*.dmp
+
+# Файлы блокировок
+*.lock
+
+# Резервные копии редакторов
+*~
+*.bak
+*.backup
+
+# Кэш-файлы
+.cache/
+*.cache
+
+# Исключения для разработки (если нужно)
+# !important_files.txt
+
+# Файлы конфигурации IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Временные файлы распаковки
+_unpacked/
+_extracted/
