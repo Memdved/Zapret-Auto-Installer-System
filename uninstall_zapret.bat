@@ -127,43 +127,43 @@ set "problems=0"
 
 sc query zapret >nul 2>&1
 if !errorlevel!==0 (
-    echo [✅] Service 'zapret' removed
+    echo [?] Service 'zapret' removed
 ) else (
-    echo [❌] Service 'zapret' still exists
+    echo [?] Service 'zapret' still exists
     set /a problems+=1
 )
 
 schtasks /query /tn "Zapret AutoUpdater" >nul 2>&1
 if !errorlevel!==0 (
-    echo [✅] Scheduled task removed
+    echo [?] Scheduled task removed
 ) else (
-    echo [❌] Scheduled task still exists
+    echo [?] Scheduled task still exists
     set /a problems+=1
 )
 
 tasklist /FI "IMAGENAME eq winws.exe" | find /I "winws.exe" > nul
 if !errorlevel!==0 (
-    echo [✅] No winws processes running
+    echo [?] No winws processes running
 ) else (
-    echo [❌] winws processes still running
+    echo [?] winws processes still running
     set /a problems+=1
 )
 
 if exist "!SCRIPT_DIR!zapret-discord-youtube-main\" (
-    echo [❌] Zapret folder still exists
+    echo [?] Zapret folder still exists
     set /a problems+=1
 else (
-    echo [✅] Zapret folder removed
+    echo [?] Zapret folder removed
 )
 
 echo.
 echo ========================================
 if !problems!==0 (
     echo    UNINSTALL COMPLETE!
-    echo    ✅ Everything removed successfully!
+    echo    ? Everything removed successfully!
 ) else (
     echo    UNINSTALL PARTIALLY COMPLETE
-    echo    ⚠️  Found !problems! issue(s)
+    echo    ??  Found !problems! issue(s)
     echo.
     echo RECOMMENDED:
     echo 1. Restart your computer

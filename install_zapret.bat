@@ -156,21 +156,21 @@ echo    INSTALLATION COMPLETE!
 echo ========================================
 echo.
 echo Installed:
-echo ✅ Zapret files in: zapret-discord-youtube-main\
-echo ✅ Windows Service: zapret (auto-start)
-echo ✅ Scheduled Task: Zapret AutoUpdater
+echo ? Zapret files in: zapret-discord-youtube-main\
+echo ? Windows Service: zapret (auto-start)
+echo ? Scheduled Task: Zapret AutoUpdater
 echo.
 echo Folder structure:
 echo !INSTALL_DIR!
-echo ├── install_zapret.bat
-echo ├── auto_updater.bat
-echo ├── uninstall_zapret.bat
-echo └── zapret-discord-youtube-main/
-echo     ├── service.bat
-echo     ├── general (FAKE TLS AUTO ALT3).bat
-echo     ├── bin/
-echo     ├── lists/
-echo     └── ...
+echo ??? install_zapret.bat
+echo ??? auto_updater.bat
+echo ??? uninstall_zapret.bat
+echo ??? zapret-discord-youtube-main/
+echo     ??? service.bat
+echo     ??? general (FAKE TLS AUTO ALT3).bat
+echo     ??? bin/
+echo     ??? lists/
+echo     ??? ...
 echo.
 echo Press any key to exit...
 pause >nul
